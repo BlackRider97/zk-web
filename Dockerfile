@@ -3,9 +3,11 @@ FROM ubuntu:14.04
 RUN  apt-get update && \ 
      apt-get install -y leiningen
 
-ADD . /zk-web
+RUN apt-get install -y git
 
-WORKDIR /zk-web
+RUN git clone https://github.com/BlackRider97/zk-web.git
+
+WORKDIR zk-web
 
 ENV LEIN_ROOT 1
 
