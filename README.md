@@ -9,7 +9,7 @@ To use zk-web, you need [leiningen](https://github.com/technomancy/leiningen) an
 Run the following command:
 
 ```bash
-git clone git://github.com/qiuxiafei/zk-web.git
+git clone https://github.com/hike/zk-web.git
 cd zk-web
 lein deps # run this if you're using lein 1.x
 lein run
